@@ -73,6 +73,18 @@ body {
   margin: 0 0 0.45rem;
 }
 
+.intro {
+  margin: 0 0 2.4rem;
+}
+
+.issue-list p {
+  margin: 0 0 1rem;
+}
+
+.status {
+  color: #6a6a66;
+}
+
 .signoff {
   margin: 2.2rem 0 0;
 }
