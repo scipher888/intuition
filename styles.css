@@ -58,7 +58,21 @@ body {
 .topnote {
   font-style: italic;
   color: #44423d;
-  margin: 0 0 2.4rem;
+  margin: 0 0 1.2rem;
+}
+
+.origin-callout {
+  border-top: 1px solid #d9d7cf;
+  border-bottom: 1px solid #d9d7cf;
+  color: #44423d;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 0 0 1.4rem;
+  padding: 0.9rem 0;
+}
+
+.origin-callout a {
+  font-weight: 600;
 }
 
 .section {
