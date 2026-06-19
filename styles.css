@@ -5,30 +5,47 @@
    Smoke test: if this would look at home next to a "Verified Publication" mark
    or a "Top 100" badge, it has failed. */
 
+:root {
+  /* Dawn — Intuition palette */
+  --cream: #fff7ea;
+  --coral: #e87954;
+  --ochre: #e6b85c;
+  --plum: #50364c;
+  --lavender: #e7ddea;
+  /* applied roles */
+  --bg: var(--cream);
+  --ink: var(--plum);
+  --muted: #8a7282;
+  --quote-ink: #6b4f63;
+  --rule: #ecdfe4;
+  --surface: #f6edf3;
+  --accent: var(--coral);
+}
+
 html {
-  background: #fdfdfc;
+  background: var(--bg);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.65;
-  color: #1f1f1f;
+  color: var(--ink);
   max-width: 640px;
   margin: 4rem auto 6rem;
   padding: 0 1.5rem;
-  background: #fdfdfc;
+  background: var(--bg);
 }
 
 .kicker {
   font-size: 0.82rem;
-  color: #6a6a66;
+  color: var(--muted);
   margin: 0 0 0.6rem;
   font-weight: 400;
 }
 
 .kicker a {
-  color: #6a6a66;
+  color: var(--muted);
 }
 
 .essay-title {
@@ -40,9 +57,9 @@ body {
 
 .standfirst {
   font-style: italic;
-  color: #44423d;
-  background: #f6f5f0;
-  border-left: 2px solid #d9d7cf;
+  color: var(--quote-ink);
+  background: var(--surface);
+  border-left: 2px solid var(--accent);
   padding: 1rem 1.2rem;
   margin: 0 0 1.8rem;
 }
@@ -57,14 +74,14 @@ body {
 
 .topnote {
   font-style: italic;
-  color: #44423d;
+  color: var(--quote-ink);
   margin: 0 0 1.2rem;
 }
 
 .origin-callout {
-  border-top: 1px solid #d9d7cf;
-  border-bottom: 1px solid #d9d7cf;
-  color: #44423d;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--quote-ink);
   font-size: 0.98rem;
   line-height: 1.55;
   margin: 0 0 1.4rem;
@@ -76,7 +93,7 @@ body {
 }
 
 .section {
-  border-top: 1px solid #d9d7cf;
+  border-top: 1px solid var(--rule);
   padding-top: 1.2rem;
   margin-top: 1.8rem;
 }
@@ -96,7 +113,7 @@ body {
 }
 
 .status {
-  color: #6a6a66;
+  color: var(--muted);
 }
 
 .signoff {
@@ -104,10 +121,10 @@ body {
 }
 
 .essay-foot {
-  border-top: 1px solid #d9d7cf;
+  border-top: 1px solid var(--rule);
   margin-top: 2.8rem;
   padding-top: 1.2rem;
-  color: #6a6a66;
+  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -124,12 +141,20 @@ em {
 }
 
 a {
-  color: #1f1f1f;
+  color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
 
 a:hover {
-  color: #000;
+  color: var(--accent);
+}
+
+/* Intuition mark — wandering thought-line (Dawn). */
+.thought-mark {
+  width: 54px;
+  height: 32px;
+  margin: 0 0 1.1rem;
+  background: left center / contain no-repeat url("intuition-mark.svg");
 }
