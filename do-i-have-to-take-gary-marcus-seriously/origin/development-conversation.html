@@ -3,56 +3,289 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The development conversation behind Do I Have to Take Gary Marcus Seriously? — Intuition</title>
+<title>Extended Development Record — Do I Have to Take Gary Marcus Seriously?</title>
 <link rel="stylesheet" href="conversation.css">
-<style>
-body{max-width:860px}
+<style>body{max-width:900px}
+.frame{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}
+.frame p{margin:.45rem 0}
+.frame .label{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.session{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}
+.thread{margin-top:1.35rem}
 .turn{max-width:92%;border-radius:16px;margin:.72rem 0;padding:.8rem .95rem}
 .human{margin-right:16%}
 .ai{margin-left:8%;max-width:96%}
+.artifact-output{margin-left:4%;max-width:98%}
+.logged-output .who::after{content:" · summary";font-style:italic;text-transform:none;letter-spacing:0}
+.bubble-text{white-space:pre-wrap;overflow-wrap:anywhere}
+.artifact-output .bubble-text{font-size:.9rem;line-height:1.55}
+.logged-output .bubble-text{font-size:.96rem}
+.external-review{background:#fbfbfb;border-style:dashed}
+details.turn summary{cursor:pointer;list-style:none}
+details.turn summary::-webkit-details-marker{display:none}
+details.turn summary .who{display:block;margin-bottom:.3rem}
 .navline{font-size:.9rem;color:var(--muted);margin:1.4rem 0}
 .navline a{margin-right:.45rem}
-@media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human{max-width:100%;margin-left:0;margin-right:0}}
-</style>
+@media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human,.artifact-output{max-width:100%;margin-left:0;margin-right:0}}</style>
 </head>
 <body>
-<p class="kicker">Intuition · the conversation behind Do I Have to Take Gary Marcus Seriously?</p>
-<h1>The development conversation behind Do I Have to Take Gary Marcus Seriously?</h1>
-<p class="lede">A public-safe account of how a dismissal reflex became an Intuition essay.</p>
+<p class="kicker">Intuition · Do I Have to Take Gary Marcus Seriously? · Deeper record</p>
+<h1>Extended Development Record — Do I Have to Take Gary Marcus Seriously?</h1>
+<p class="lede">A fuller public-safe account of how the essay moved from a dismissal reflex into a published Intuition piece, then into a paired stricter audit.</p>
 
-<div class="frame"><span class="label">What this page is</span>
-<p>This is not a transcript and not a proof record. It summarizes the author + AI development conversation behind the essay: what the author brought, what the AI process helped shape, and why this piece remains the reflex before the stricter audit.</p>
-<p>Intuition is lighter-rigor opinion. The companion Signal &amp; Noise essay applies the stricter process.</p>
+<div class="frame"><span class="label">Reader note</span>
+<p>This page replaces the earlier compressed account. It preserves fuller source-session turns where available and uses the edit-log as the spine where the earlier Intuition-only conversation was not recovered in full.</p>
+<p>It is still not a raw machine log. Shell traces, local file paths, private operational details, and unrelated heartbeat traffic are omitted or redacted. The external ChatGPT review is represented by its review brief and pressure-point list rather than every sentence of the third-party paste.</p>
+<p>Intuition is a lighter-rigor surface. This record shows where the reflex came from and how it was bounded; it does not prove the essay is true or the author’s reaction is fair.</p>
+</div>
+
+<div class="frame"><span class="label">Completeness note</span>
+<p>Complete here means complete as preserved and public-safe. Early Intuition drafting survives mainly as saved drafts and the live edit-log; the later paired Gary Marcus session has fuller source turns and is shown directly below.</p>
 </div>
 
 <p class="navline"><a href="./">Origin overview</a> · <a href="../">Essay</a> · <a href="https://www.signalandnoise.email/p/the-gary-marcus-audit">Stricter companion ↗</a></p>
-<p class="meta">Sources: Intuition Issue 2 edit-log, saved drafts, combined Marcus review/adjudication, and public-candidate origin record. Private operational details are omitted.</p>
+<p class="meta">Sources: Intuition Issue 2 live edit-log, preserved June 20 paired source-session extract, saved drafts/review artifacts, and final public package state. Private operational details are omitted.</p>
 
 <div class="thread">
-<div class="turn human"><div class="who">The author · starting point</div><p>The author surfaced the first-person tension: wanting to dismiss Gary Marcus, not primarily because of one technical claim, but because the critic's public role felt difficult to take at face value.</p></div>
-<div class="turn ai summary-turn"><div class="who">AI editorial process</div><p>Drafted versions that made the reaction legible without turning it into a verdict. The essay's job became preserving the reflex in a form that could later be audited.</p><span class="span-note"><b>Affected:</b> premise · <b>Disposition:</b> accepted</span></div>
+<h2 class="session" id="edit-log-spine">Earlier Intuition drafting · edit-log spine</h2><div class="turn human author-input">
+<div class="who">The author · earlier preserved prompts (edit-log spine)</div>
+<div class="bubble-text">The earlier Intuition-only drafting happened before this source-session extraction. The live edit-log preserves the spine: the author opened the piece around Gary Marcus, accepted-risk analogies, and a possible stricter paired essay; then recentered it around the desire to dismiss Marcus, added the rider-as-attorney/self-critique angle, asked for fairness/substantiation, and moved through Editor and Light NIR passes.</div>
+</div><div class="turn ai logged-output">
+<div class="who">AI editorial process · earlier preserved outputs</div>
+<div class="bubble-text">The earlier outputs are represented by saved drafts and edit-log rows rather than a complete raw transcript on this page: v0.1 opened the accepted-risk frame; v0.2 recentered the dismissal reflex; v0.3 added the rider-as-attorney hinge and AI-process bridge; v0.4 softened attribution and tone-reading; v0.5 compressed the spine after Light NIR; v0.6 later absorbed the combined Marcus review.</div>
+</div><h2 class="session" id="paired-session">Paired Gary Marcus session · fuller preserved source turns</h2><div class="turn human author-input" id="turn-446">
+<div class="who">The author · material that moved from S&amp;N into Intuition · turn 446</div>
+<div class="bubble-text">Line 1 needs to be more consistent with Intuition Issue 2, so something closer to “I want Gary Marcus to be wrong” or “I would like to write him off, ignore his claims as irrelevant, unimportant, and most gratifyingly, just plain wrong.
 
-<div class="turn human"><div class="who">The author · felt analogy</div><p>The author brought the automobile-risk analogy: some warnings can be true even after a society has normalized the tradeoff.</p></div>
-<div class="turn ai summary-turn"><div class="who">AI editorial process</div><p>Helped keep the analogy double-sided. Accepted risk is not automatically governed risk, and normalization can conceal externalized cost.</p><span class="span-note"><b>Affected:</b> central analogy · <b>Disposition:</b> accepted</span></div>
+Line 13, we shouldn’t directly reference the intuition piece in the Signal &amp; Noise piece. Each issue should essentially stand own it’s own, but work together if read in sequence.  Consider modifying to something closer to “but do my wishes hold up under scrutiny?”
 
-<div class="turn human"><div class="who">The author · tone and builder tension</div><p>The author wanted to preserve the discomfort around critics who appear to gain status from declaring failure, and the attraction to people who build through imperfection.</p></div>
-<div class="turn ai summary-turn"><div class="who">AI editorial process</div><p>Flagged that tone-reading can become a shortcut. The final essay keeps the projection visible but does not treat it as evidence that Marcus is wrong.</p><span class="span-note"><b>Affected:</b> tearing-down section · <b>Disposition:</b> accepted</span></div>
+Line 19: Whether or not I trust Marcus is irrelevant. I don’t think he makes stuff op or posts things he doesn’t believe. I think he is internally consistent and has, when viewed within the context he is operating in, probably complete integrity. The issues is he annoys the **** out of me so I would love to dismiss everything he says, write him off as completely misguided, stuck in the past, and relish the schadenfreude of watching his predictions fade into irrelevance. &lt;&lt; Come to think of it, maybe everything I just said is good material to integrate into Intuition Issue 2 - please look into this too. Regardless, I’m not sure what you could use in this transition besides trust, but it’s not really accurate or relevant to say “I do not trust Marcus”. Maybe we could do away with this line altogether if we can’t find a suitable alternative to trust here.
 
-<div class="turn human"><div class="who">The author · integrity correction</div><p>The author clarified that the issue was not distrust of Marcus's integrity. The sharper claim was the author's irritation-driven wish to dismiss him.</p></div>
-<div class="turn ai summary-turn"><div class="who">AI editorial process</div><p>Added the early correction: Marcus is not simply anti-AI, has acknowledged practical uses for current systems, and there is no basis in the essay for treating him as corrupt or inventing concerns.</p><span class="span-note"><b>Affected:</b> opening correction · <b>Disposition:</b> accepted</span></div>
+Line 21: change “adoption momentum” to something closer to “perceived political affiliation” or just “politics”.
 
-<div class="turn ai summary-turn"><div class="who">AI editorial process · fairness pass</div><p>Compared the essay against representative Marcus sources and the stricter Signal &amp; Noise companion. Several phrases were softened or removed so the Intuition essay would remain opinion-forward without misrepresenting the critic.</p><span class="span-note"><b>Affected:</b> source-fidelity guardrails · <b>Disposition:</b> accepted</span></div>
+LIne 135: - 141 - We can’t end this section with a laundry list of things people can do to audit their views. It may be true, but it is complete unhelpful. They will forget 100% of this a picosecond after they read it. Ideally we would distill this into one or two, or at most 3 absolute maximum things people could do to adversarially critique their own views, but honestly it’s hard to do from inside one’s own head due to motivated reasoning and filtering, etc, etc, and this is where the adversarial critique function of AI can be genuinely useful because it doesn’t have all this motivated reasoning and filtering  that make self-critique so difficult for humans. So my suggestions here is to put 1 - 3 ways that people can self critique in the beginning of this section - along with all the reasons this is so challenging and often ineffective (motivated reasoning and filtering, etc) and end with the AI assisted adversarial critique.</div>
+</div><div class="turn ai logged-output" id="turn-535">
+<div class="who">AI editorial process · Intuition v0.5 updated with integrity-vs-irritation material · turn 535</div>
+<div class="bubble-text">Done. I revised:
 
-<div class="turn human"><div class="who">The author · pairing decision</div><p>The paired essays needed a clean division of labor: Intuition preserves the reflex; Signal &amp; Noise asks what survives when that reflex is no longer allowed to decide.</p></div>
-<div class="turn ai summary-turn"><div class="who">AI editorial process</div><p>Cross-linked the two pieces and made the Intuition essay more explicit about its limits. It is not the final argument; it is the felt starting point.</p><span class="span-note"><b>Affected:</b> publication framing · <b>Disposition:</b> accepted</span></div>
+- Issue 16 v0.4 [local artifact]: opening now starts with wanting Marcus to be wrong, removes the direct Intuition reference, replaces the trust frame, changes “adoption momentum” to politics, and rebuilds the closing self-audit section around AI-assisted adversarial critique.
+- Intuition Issue 2 v0.5 [local artifact]: added the integrity-vs-irritation paragraph, since that material belongs more naturally in Intuition’s raw-reflex frame.
 
-<div class="turn ai summary-turn"><div class="who">AI editorial process · final package</div><p>Prepared the static page, repaired the live-page truncation after publication, generated local audio materials, and created this origin record. Audio and origin placement remained approval-gated until this push.</p><span class="span-note"><b>Affected:</b> public package · <b>Disposition:</b> accepted</span></div>
+Also updated Issue 16 edit-log [local artifact], Intuition edit-log [local artifact], canonical state [local artifact], and today’s memory.
+
+Verification: no trailing whitespace in edited files; tracked canonical diff check passed; Issue 16 body is now 2,399 words. Next gate remains focused Referee re-check on v0.4.</div>
+</div><div class="turn human author-input" id="turn-771">
+<div class="who">The author · asks for combined adversarial critique · turn 771</div>
+<div class="bubble-text">Excellent, but before we proceed, since we are publishing two issues together (Influent #2 and Signal &amp; Noise #16), and since both of these issues directly reference a public figure and make claims about his views, Let’s prepare a prompt to do the Adversarial critique for both Intuition #2 and Signal &amp; Noise #16 at the same time.
+I know this is somewhat redundant with checks we’ve already run, but since these issues involve Gary Marcus, let’s try not to misrepresent his views and do a modified more rigors adversarial critique that covers the following 4 things:
+    * Are we misrepresenting Gary Marcuses publically stated claims in any way?
+    * Are we misrepresenting the current state of AI and/or its technological underpinnings in any way?
+    * Are our issues internally coherent and coherent across both issues (Issue 2 and Issue 16)?
+    * Our normal Light NIR for refining prose, etc.</div>
+</div><div class="turn ai logged-output" id="turn-838">
+<div class="who">AI editorial process · combined prompt prepared · turn 838</div>
+<div class="bubble-text">Done. I created the combined prompt here:
+
+issue-016-intuition-002-combined-marcus-adversarial-nir-prompt-2026-06-20.md [local artifact]
+
+It asks ChatGPT 5.5 Pro Extended Thinking to browse and check all four targets: Marcus source fidelity, current AI/architecture fidelity, internal/cross-issue coherence, and Light NIR prose refinement. It includes both current drafts plus the Issue 16 footer/source package candidate.
+
+I also logged the new gate in both edit logs and updated canonical state so this combined prompt supersedes the Issue 16-only NIR as the next external review step. Verification passed: `git diff --check`, balanced markdown fences, and prompt/path sanity checks.</div>
+</div><details open class="turn ai artifact-output external-review" id="turn-846">
+<summary><span class="who">External model review pasted by the author · turn 846 · excerpt</span></summary>
+<div class="bubble-text">Here is the Chat GPT Adversarial Review: # 1. **Review Brief**
+
+## What documents are being reviewed
+
+This review covers the supplied drafts and candidate source package for:
+
+1. **Intuition Issue 2:** “Do I Have to Take Gary Marcus Seriously?”
+2. **Signal &amp; Noise Issue 16:** “The Warning After Adoption” ([About Facebook][1])eview is fixed to **June 20, 2026**. The Fable/Mythos dispute, model availability, company descriptions, and public architecture programs are especially date-sensitive.
+
+## What is at stake
+
+The principal publication risk is not ordinary imprecision. It is the possibility that two linked essays construct a rhetorically convenient Gary Marcus—anti-AI, contemptuous of ordinary users, or unwilling to acknowledge usefulness—and then congratulate themselves for taking that construction seriously.
+
+The second risk is technical laundering: using labels such as *reasoning*, *agent*, *multimodal*, *robotics*, *world model*, or *Mythos-class* as though the labels disclose architecture, reliability, or readiness for institutional authority.
+
+The third risk is process inflation: letting a strong editorial method imply that the resulting conclusions are true.
+
+## What must be true for each issue to work
+
+**Intuition Issue 2** works only if its admitted reflex remains genuinely provisional. It can expose irritation, tribal filtering, builder affinity, and the desire to dismiss Marcus. It cannot quietly resolve the empirical questions it says it has not audited. It also cannot introduce a damaging attribution merely as a hypothetical.
+
+**Signal &amp; Noise Issue 16** works only if its stricter source process produces visibly stricter claims. It must distinguish Marcus’s documented positions from the author’s synthesis; distinguish public architecture descriptions from proprietary internals; and keep the Mythos case bounded by what the public record establishes.
+
+## What must be true for the pair to work together
+
+The two pieces should make the same basic fairness correction—wanting to dismiss Marcus is not evidence against him—while performing different jobs:
+
+* **Intuition** records the reflex and turns it back on the author.
+* **Signal &amp; Noise** tests the factual and technical claims that the reflex would otherwise avoid.
+
+The pair fails if Intuition prematurely imports Signal &amp; Noise’s conclusions, or if Signal &amp; Noise repeats Intuition’s emotional argument with more links but no stricter evidentiary standard.
+
+## What I tried hardest to break
+
+I concentrated on six pressure points:
+
+1. The unsupported attribution that Marcus treats continued AI use as a moral failing.
+2. The flattening of Marcus into “anti-AI” despite his documented acknowledgment of uses and advocacy for hybrid alternatives.
+3. The suggestion that leading labs have abandoned strong scaling claims—or, conversely, publicly endorse bare LLM scaling as their sole route.
+4. The architecture taxonomy, especially the improper treatment of multimodality as scaffolding and Meta as the current home of LeCun’s world-model program.
+5. The use of Fable/Mythos as evidence about architecture, validated capability, or the truth of either side’s larger theory.
+6. The possibility that “culturally ineffective” and the AI-assisted editorial process are being presented with more epistemic weight than the evidence supports.
+
+---
+
+[Public-page note: the author pasted a much longer external ChatGPT review at this point. The full paste functioned as an outside critique artifact; this page preserves the review brief and pressure points that shaped adjudication, while the next assistant turn records what was accepted.]</div>
+</details><div class="turn ai logged-output" id="turn-977">
+<div class="who">AI editorial process · Intuition v0.6 and S&amp;N v0.7 adjudicated · turn 977</div>
+<div class="bubble-text">Adjudicated and applied.
+
+Created:
+- Intuition Issue 2 v0.6 [local artifact]
+- Signal &amp; Noise Issue 16 v0.7 [local artifact]
+- Issue 16 footer/source package v0.2 [local artifact]
+
+Key changes: removed the Intuition “moral failure” hypothetical, strengthened Marcus fairness language, repaired the Issue 16 architecture taxonomy, narrowed Mythos to a split public-record verdict, corrected Meta/LeCun/AMI framing, and changed the Issue 16 verdict into supported / unsupported / author-judgment layers.
+
+Also updated Issue 16 edit-log [local artifact], Intuition edit-log [local artifact], canonical state [local artifact], and today’s memory [local artifact].
+
+Verification passed: whitespace scan, `git diff --check` for tracked touched state, markdown fence balance, and risk-phrase scan. The only remaining scan hits were intentional `GPT-5.5` source references. Source anchors are now grouped in the footer package, including Marcus, OpenAI, Anthropic, Meta/Reuters, DeepMind, Axios, and Dario Amodei links.
+
+Next gate: final package prep/checklist for Issue 16, and explicit the author Ownership / Publish Gate for Intuition Issue 2.</div>
+</div><h2 class="session" id="title-and-publication">Pairing, publication, and public origin package</h2><div class="turn human author-input" id="turn-993">
+<div class="who">The author · S&amp;N title question clarifying the pair · turn 993</div>
+<div class="bubble-text">Agree with one question. Can we come up with a better title for Issue 16 than "The warning after adoption"? This title is accurate, but also incredibly vague and not linked to Intuition #2 in any way. Could we use "The Gary Marcus Audit" for Issue 16?</div>
+</div><div class="turn ai artifact-output" id="turn-1016">
+<div class="who">AI editorial process · title recommendation · turn 1016</div>
+<div class="bubble-text">Yes. **The Gary Marcus Audit** is a clear upgrade: concrete, linked to Intuition #2, and accurate to Issue 16’s stricter job.
+
+My only caveat: “audit” can imply a comprehensive profile of Marcus. So I’d scope it with a deck/subtitle:
+
+**The Gary Marcus Audit**
+*What survives after irritation, adoption, and the current AI roadmap*
+
+Runner-up, even tighter as a pair with Intuition:
+
+**Taking Gary Marcus Seriously**
+
+My vote: use **The Gary Marcus Audit** with the scoped subtitle.</div>
+</div><div class="turn human author-input" id="turn-1017">
+<div class="who">The author · adversarial-audit option · turn 1017</div>
+<div class="bubble-text">Actually, what do you think about the following: "The Gary Marcus Adversarial Audit" - gives readers a "heads up" about where I'm coming from and perhaps also makes the landing better (in defense of Gary's core messaging). With your deck/subtitle included. What do you think?</div>
+</div><div class="turn ai artifact-output" id="turn-1018">
+<div class="who">AI editorial process · title/deck refinement · turn 1018</div>
+<div class="bubble-text">I like the instinct, but I would not make the full headline **“The Gary Marcus Adversarial Audit.”** It’s accurate, but it’s a little noun-heavy and “adversarial” may read as adversarial *toward Marcus*, when the stronger surprise is that the audit is adversarial toward your own dismissal reflex.
+
+Best package:
+
+**The Gary Marcus Audit**
+*What survives after irritation, adoption, and the current AI roadmap*
+
+Or, if you want the “in defense of Gary’s core messaging” signal stronger:
+
+**The Gary Marcus Audit**
+*An adversarial test of the critic I wanted to dismiss*
+
+My vote is the second deck. It links cleanly to Intuition #2, tells readers where you’re coming from, and sets up the turn: this is not a dunk on Marcus; it’s a pressure test of the reasons you wanted not to take him seriously.</div>
+</div><div class="turn human author-input" id="turn-1019">
+<div class="who">The author · final title/deck proposal · turn 1019</div>
+<div class="bubble-text">I see your point. How about "The Gary Marcus Audit An adversarial test of the critic I want to dismiss" so the title doesn't give away the final landing. What do you think?</div>
+</div><div class="turn ai artifact-output" id="turn-1020">
+<div class="who">AI editorial process · title/deck accepted · turn 1020</div>
+<div class="bubble-text">Yes. That’s the best version so far.
+
+Use it as title + deck, not one long title:
+
+**The Gary Marcus Audit**
+*An adversarial test of the critic I want to dismiss*
+
+“I want” is better than “wanted” because it preserves the live tension and doesn’t spoil the landing. It also pairs cleanly with Intuition #2: Intuition confesses the reflex; Issue 16 audits it.</div>
+</div><div class="turn human author-input" id="turn-1303">
+<div class="who">The author · asks to prepare and push Intuition Issue 2 · turn 1303</div>
+<div class="bubble-text">Excellent. Can you prepare and push the Issue 2 essay?</div>
+</div><div class="turn ai logged-output" id="turn-1460">
+<div class="who">AI editorial process · Intuition Issue 2 published · turn 1460</div>
+<div class="bubble-text">Done. Intuition Issue 2 is live:
+
+https://scipher888.github.io/intuition/do-i-have-to-take-gary-marcus-seriously/
+
+Pushed to `scipher888/intuition`:
+`404ae90 Publish Intuition issue 2`
+
+Also updated the Intuition home page and issues index, then verified the live essay route, home page, and `/issues/` page after GitHub Pages deployed. I logged it in the Issue 2 edit-log and canonical state. No Issue 2 Origin/conversation module was added in this pass, and I recorded that honestly.</div>
+</div><div class="turn human author-input" id="turn-1461">
+<div class="who">The author · asks for World Behind, links, audio, and cross-link copy · turn 1461</div>
+<div class="bubble-text">Excellent, now we still need to prepare the world behind the words material for both essays, including "the conversation behind this" content and links, a brief statement to include in both issues with a link to the other issue (so they are cross linked effectively), and the audio material for each issue. Can  you start with a brief statements for each issue that informs the reader of the corresponding issue and links to it?</div>
+</div><div class="turn ai logged-output" id="turn-1462">
+<div class="who">AI editorial process · cross-link copy proposed · turn 1462</div>
+<div class="bubble-text">Recommended pair:
+
+**For Intuition Issue 2**
+
+&gt; Companion essay: I later took this same reaction through the stricter Signal &amp; Noise process in [The Gary Marcus Audit](https://www.signalandnoise.email/p/the-gary-marcus-audit). This Intuition piece preserves the reflex; the Signal &amp; Noise essay asks what survives after that reflex is no longer allowed to decide the case.
+
+**For Signal &amp; Noise Issue 16**
+
+&gt; Companion piece: this essay has a looser Intuition sibling, [Do I Have to Take Gary Marcus Seriously?](https://scipher888.github.io/intuition/do-i-have-to-take-gary-marcus-seriously/). That piece shows the first reaction this one audits: the wish to dismiss Gary Marcus before his claims get a fair hearing.
+
+Use the S&amp;N URL as provisional until Beehiiv confirms the final slug.</div>
+</div><div class="turn human author-input" id="turn-1463">
+<div class="who">The author · asks to push the Intuition cross-link · turn 1463</div>
+<div class="bubble-text">I took care of Issue 16 on beehiiv. Can you push the Intuition Issue 2 content &amp; link?</div>
+</div><div class="turn ai logged-output" id="turn-1496">
+<div class="who">AI editorial process · Intuition cross-link pushed · turn 1496</div>
+<div class="bubble-text">Done. I pushed the Intuition Issue 2 cross-link update.
+
+Live page:
+https://scipher888.github.io/intuition/do-i-have-to-take-gary-marcus-seriously/
+
+Added:
+- Top companion-note callout linking to **The Gary Marcus Audit**
+- Footer link: “the stricter companion The Gary Marcus Audit”
+- Logged it in the Issue 2 edit-log and today’s memory
+- Updated canonical state for the paired-essay next steps
+
+Intuition repo commit: `d0e4e72`
+Verified live on GitHub Pages. Beehiiv itself blocks command-line fetch with Cloudflare, but the Intuition page now contains the intended URL: `https://www.signalandnoise.email/p/the-gary-marcus-audit`.</div>
+</div><div class="turn human author-input" id="turn-1522">
+<div class="who">The author · asks for audio and conversation-behind-this package · turn 1522</div>
+<div class="bubble-text">Excellent. Can you prepare the audio for both essays, and the world behind the words material for both essays, including "the conversation behind this" content, and the links for placement inside the Issues for "the conversation behind this" content?</div>
+</div><div class="turn ai logged-output" id="turn-1755">
+<div class="who">AI editorial process · local package prepared · turn 1755</div>
+<div class="bubble-text">Prepared locally. No audio upload, public page push, or Beehiiv/Intuition placement was done.
+
+**Audio**
+- Issue 16 MP3: signal-noise-issue-016…mp3 [local artifact] — about 13:31
+- Intuition Issue 2 MP3: intuition-issue-002…mp3 [local artifact] — about 10:29
+- QA notes and podcast packets are in the drafts folder:
+  - Issue 16 audio QA [local artifact]
+  - Intuition Issue 2 audio QA [local artifact]
+  - Issue 16 episode packet [local artifact]
+  - Intuition Issue 2 episode packet [local artifact]
+
+**World Behind / Conversation Material**
+- Issue 16 public-candidate draft: issue-016-world-behind-public-candidate-2026-06-21.md [local artifact]
+- Intuition Issue 2 public-candidate draft: intuition-issue-002-origin-conversation-public-candidate-2026-06-21.md [local artifact]
+- Placement snippets and target links: paired-gary-marcus-conversation-link-placement-packet-2026-06-21.md [local artifact]
+
+Prepared target links, not live yet:
+- Issue 16: `https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-016/development/`
+- Intuition Issue 2: `https://scipher888.github.io/intuition/do-i-have-to-take-gary-marcus-seriously/origin/development-conversation.html`
+
+Important blocker: the Intuition audio was generated from canonical v0.6, but the current live Intuition page appears to end earlier. I documented that in the QA, episode packet, asset manifest, canonical state, and memory. Resolve that before publishing/placing the Intuition audio or origin link.
+
+Verification passed: `git diff --check`, MP3 duration/bitrate checks, and SecureClaw privacy check on the public-candidate/placement files.</div>
+</div>
 </div>
 
-<h2>Reader summary</h2>
-<div class="frame"><span class="label">Why this record exists</span>
-<p>"Do I Have to Take Gary Marcus Seriously?" is not the final argument. It is the felt starting point.</p>
-<p>The conversation behind it shows a human reaction being preserved, shaped, and bounded by an AI-assisted editorial process. The result is not neutrality. It is a more honest first move.</p>
+<h2>What Changed</h2>
+<div class="frame"><span class="label">Development summary</span>
+<p><strong>The piece stayed a reflex, not a verdict.</strong> The author’s irritation remained visible, but the essay stopped pretending irritation was evidence.</p>
+<p><strong>Marcus-fidelity got stricter.</strong> The unsupported “moral failure” hypothetical was removed, and the essay now says there is no basis in the piece for treating Marcus as dishonest or corrupt.</p>
+<p><strong>The pairing clarified the job.</strong> Intuition preserves the first reaction; Signal &amp; Noise audits what survives when that first reaction is no longer allowed to decide.</p>
+<p><strong>The public package became explicit about limits.</strong> The essay, origin page, audio link, and companion link now point readers toward the stricter audit without making the Intuition piece pretend to be one.</p>
 </div>
 
 <div class="foot"><a href="./">← Origin overview</a> · <a href="../">Do I Have to Take Gary Marcus Seriously?</a> · <a href="../../">Intuition</a></div>
