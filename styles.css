@@ -151,6 +151,29 @@ a:hover {
   color: var(--accent);
 }
 
+/* Landing footer — Intuition issues left, Signal & Noise link right. */
+.site-foot {
+  border-top: 1px solid var(--rule);
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.8rem 1.5rem;
+}
+
+.site-foot .foot-issues p {
+  margin: 0 0 0.4rem;
+}
+
+.site-foot .foot-issues p:last-child {
+  margin: 0;
+}
+
+.site-foot .foot-sn {
+  align-self: flex-end;
+}
+
 /* Intuition mark — wandering thought-line (Dawn). */
 .thought-mark {
   width: 54px;
